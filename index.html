@@ -9,38 +9,50 @@
     <link rel="stylesheet" href="./assets/styles.css">
 </head>
 <body>
-    <nav>
-      
-         <div class="nav-container">
+    <header>
+            <div class="menu-mobile">
+              
+                  <a href="#home" class="nav-options">Inicio</a>
+                  <a href="#products" class="nav-options">Productos</a>
+
+            </div>
+
+      <nav class="scroll-nav">
+          <div class="nav-container">
              
              <div class="logo-container  nav-main">
                  <img class="nav-logo" src="./assets/images/logo-black.png" alt="White company logo">
                  <p>White</p>
              </div>
              
-             <div class="nav-menu">
-                    
-                 <a href="#home" class="nav-options home">Inicio</a>
-                 <a href="#products" class="nav-options">Productos</a>
+        
+
+             <div class="nav-main">
+
+                <label for="menu" class="nav-icons"> 
  
-             </div>
+                  <div class="cart" id="open-cart"> 
+                     <img  src="./assets/images/bag-shopping.svg" alt="bag shopping icon">
+                     <span class="cart-count" id="cart-count">0</span>
+                  </div>  
+                    
+                  <div class="darkmode">
+                    <img src="./assets/images/moon.svg" alt="dark mode icon">
+                  </div>
 
-            <div class="nav-main">
-
-                <label for="menu" class="nav-icons">
-
-                    <img src="./assets/images/moon.svg" alt="dakt mode icon">
-                    <img src="./assets/images/bag-shopping.svg" alt="bag shopping icon">
-                    <img src="./assets/images/menu-icon.svg" alt="menu icon">
-                  
+                  <div id="open-menu">
+                    <img  class="menu-icon"  src="./assets/images/menu-icon.svg" alt="menu icon">
+                  </div>
+                    
                 </label>
               
             </div>
+  
+          </div>
 
+       </nav>
 
-         </div>
-
-    </nav>
+    </header>
 
 
 <section id="home" class="first-section">
@@ -124,100 +136,12 @@
 
 <section class="third-section">
 
-<!-- CARD ONE  -->
-      
-    <div class="card-one">
+<!-- CARD ONE -->
 
-        <div class="image-container">
-            <img src="./assets/images/japanese-2.png" alt="Cuadro Eros 2022">
-        </div>
-       
+  <div class="products-list" >
 
-        <div class="description-product">
-
-            <div class="line-p1"></div>
-
-            <div class="add-product-botton">+
-            </div>
-            
-            <div class="position-description">
-
-              <p class="price-cards">$150.00</p> 
-              <h3>Eros</h3>
-
-              <div class="line-p2"></div>
-
-              <p class="stock-information">Disponible: 1</p>
-
-            </div>
-
-        </div>
+  </div>
   
-    </div>
-
-
-<!-- CARD TWO  -->
-      
-    <div class="card-two">
-
-        <div class="image-container">
-            <img src="./assets/images/japanese-1.png" alt="Cuadro Pan 2022">
-        </div>
-       
-
-        <div class="description-product">
-
-            <div class="line-p1"></div>
-
-            <div class="add-product-botton">+
-            </div>
-            
-            <div class="position-description">
-
-              <p class="price-cards">$359.00</p> 
-              <h3>Pan</h3>
-
-              <div class="line-p2"></div>
-
-              <p class="stock-information">Disponible: 3</p>
-
-            </div>
-
-        </div>
-        
-    </div>
-
-<!-- THIRD CARD -->
-
-    <div class="third-card">
-
-        <div class="image-container">
-            <img src="./assets/images/japanese-3.png" alt="Cuadro Hebe 2022">
-        </div>
-       
-
-        <div class="description-product">
-
-            <div class="line-p1"></div>
-
-            <div class="add-product-botton">+
-            </div>
-            
-            <div class="position-description">
-
-              <p class="price-cards">$999.00</p> 
-              <h3>Hebe</h3>
-
-              <div class="line-p2"></div>
-
-              <p class="stock-information">Disponible: 5</p>
-
-            </div>
-
-        </div>
-
-    </div>
-
 </section>
 
 
@@ -273,8 +197,31 @@
     </div>
 
   </div>
-
 </footer>
 
+<div class="menu-overlay">
+
+  <img src="./assets/images/close-cart-icon.svg" id="close-menu" alt="">
+
+</div>
+
+<div class="shopping-cart-overlay">
+    <div class="selected-products-list">
+        <img src="./assets/images/close-cart-icon.svg" id="close-cart" alt="close cart icon">
+        <div class="cart-list">
+            <div class="empty-state">
+              <h5>My Carrito</h5>
+              <img src="./assets/images/empty-cart.png" alt="cart empty image ">
+              <h5>Tu carrito esta vacio</h5>
+              <p>Aun no has agregado ninguna producto al carrito, puedes hacerlo utiliznado el "+" icono en el producto</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./assets/main.js"></script>
 </body>
 </html>
+
+
+
+
